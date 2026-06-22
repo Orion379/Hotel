@@ -20,32 +20,6 @@
   </head>
   <body>
     <header>
-      <!-- Hidden checkbox — the toggle engine -->
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="overlay"></label>
-
-      
-      <div class="off-screen-menu">
-        <div class="menu-header">
-          <img
-            src="../Photos/Marriott-Bonvoy-Logo-Vector.svg--300x87.png"
-            alt=""
-          />
-          <label for="menu-toggle" class="close-btn">X</label>
-        </div>
-
-        <ul>
-          <li><a href="#">Find & Reserve</a></li>
-          <li><a href="#">Special Offers</a></li>
-          <li><a href="#">Meetings & Events</a></li>
-          <li><a href="#">Vacations</a></li>
-          <li><a href="#">Our Brands</a></li>
-          <li><a href="#">Our Credit Cards</a></li>
-          <li><a href="#">About Marriott Bonvoy</a></li>
-          <li><a href="#">Careers at Marriott</a></li>
-          <li><a href="#">Meetings & Events</a></li>
-        </ul>
-      </div>
 
       <nav class="head1">
         <!-- ham buttons-->
@@ -82,7 +56,8 @@
           </ul>
         </div>
       </nav>
-
+    </header>
+    <div class="sticky-bar">
       <nav class="head3">
         <h3 class="text">
           Sheraton Addis, a Luxury Collection Hotel, Addis Ababa
@@ -108,9 +83,9 @@
           </div>
         </div>
       </nav>
-    </header>
-
-    <section class="section1">
+      
+      
+      <section class="section1">
       <div class="sec1-text">
         <div class="sec1-block">
           <a href="#" class="label"
@@ -139,31 +114,13 @@
         <button class="sec1-btn">View Rates</button>
       </div>
     </section>
+    </div>
+
 
     <section class="section2">
-      <div class="slider-controls">
-        <div class="top-row">
-          <div class="prev">
-            <i class="fa-solid fa-chevron-left"></i>
-            <span>Previous</span>
-          </div>
-
-          <div class="line"></div>
-
-          <div class="next">
-            <span>Next</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="gallery">Gallery</div>
-        </div>
-        <div class="slide-indicator">
-          <span id="current-slide">01</span>
-          <span>/</span>
-          <span>02</span>
-        </div>
+      <div class="gallery">
+         <div class="slide slide1"></div>
+         <div class="slide slide2"></div>
       </div>
     </section>
 
@@ -247,6 +204,72 @@
             <button class="view-rate">View Rates</button>
           </div>
         </div>
+
+        <div class="room-card">
+          <img
+            src="../Photos/addlc-classic-twin-guestroom-4686-hor-clsc.avif"
+            alt="Executive Twin"
+          />
+
+          <div class="room-info">
+            <h3>Executive Twin <span>></span></h3>
+            <hr />
+            <button class="view-rate">View Rates</button>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img
+            src="../Photos/addlc-classic-suite-9342-hor-clsc.webp"
+            alt="Classic Suite"
+          />
+
+          <div class="room-info">
+            <h3>Classic Suite <span>></span></h3>
+            <hr />
+            <button class="view-rate">View Rates</button>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img
+            src="../Photos/addlc-junior-suite-7440-hor-clsc.avif"
+            alt="Junior Suite"
+          />
+
+          <div class="room-info">
+            <h3>Junior Suite <span>></span></h3>
+            <hr />
+            <button class="view-rate">View Rates</button>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img
+            src="../Photos/addlc-executive-suite-7443-hor-clsc.avif"
+            alt="Executive Suite"
+          />
+
+          <div class="room-info">
+            <h3>Executive Suite <span>></span></h3>
+            <hr />
+            <button class="view-rate">View Rates</button>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img
+            src="../Photos/addlc-villa-9401-hor-clsc.webp"
+            alt="Villa"
+          />
+
+          <div class="room-info">
+            <h3>Villa <span>></span></h3>
+            <hr />
+            <button class="view-rate">View Rates</button>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -676,7 +699,7 @@
 
 <section class="section20">
   <details class="fifthholders">
-    <summary>more information</summary>
+    <summary>More Information</summary>
     <p class="paragraph">
       From the ornate lobby to the manicured gardens with a fountain of "dancing waters" pulsating to classic symphonies, the hotel
       offers a never-ending vision of luminous beauty. Surrounded by luxuriant, terraced grounds, it stays true to the city of
@@ -727,7 +750,7 @@
 
 <section class="section23">
   <details class="firstholder23">
-    <summary>more information</summary>
+    <summary>More Information</summary>
     <p class="paragraph23">
       The Head Concierge at the Sheraton Addis is supported by our knowledgeable reception staff.<br><br>
       <strong>National Archeological Museum</strong><br>
@@ -784,7 +807,7 @@
 
 <section class="section23">
   <details class="firstholder23">
-    <summary>more information</summary>
+    <summary>More Information</summary>
     <p class="paragraph23">
       <strong>High Speed Internet Access in Public Areas</strong><br>
       Guests may enjoy High Speed Internet Access in the Business Center and in all rooms and suites while wireless High
@@ -813,30 +836,8 @@
   </div>
 </section>
 
-<details>
-  <summary>Hotel Information</summary>
-  <div class="content">
-    <div class="col-left">
-      <p class="try">Check-in: 3:00 pm</p>
-      <p class="try">Check-out: 1:00 pm</p>
-      <p class="try">Minimum Age to Check In: 18</p>
-      <p class="try">Smoke Free Property</p>
-    </div>
-    <div class="col-right">
-      <div class="section">
-        <p class="section-title"><span class="tryagain">Pet Policy</span></p>
-        <p>Pets Not Allowed</p>
-      </div>
-      <div class="section">
-        <p class="section-title"><span class="tryagain">Parking</span></p>
-        <p><strong>Complimentary On-Site Parking</strong></p>
-      </div>
-    </div>
-  </div>
-</details>
-
 <div class="property-details">
-
+  <h3 style="padding: 100px 0 50px 0;">Property Details</h3>
   <details class="prop-details">
     <summary>
       Hotel Information
@@ -985,7 +986,7 @@
 
 <section class="new">
   <div class="new1">
-    <h3>Frequently Asked Questions</h3>
+    <h3 style="padding: 10px 0 50px 0;">Frequently Asked Questions</h3>
   </div>
 </section>
 
